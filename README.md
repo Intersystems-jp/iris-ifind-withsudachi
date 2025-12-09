@@ -23,10 +23,11 @@ SudachiはPythonによる実装も提供されているためIRISでの実装も
 
 * ```git clone https://github.com/intersystems-jp/iris-ifind-withsudachi.git```
 
-### Docker ビルドプロセス
+### Docker ビルドプロセス(TBD 現時点では動作しない python pipバージョンの問題？)
 
 ### ビルド&実行
-* ```docker-compose up -d --build```      
+
+```docker-compose up -d --build```      
 
 を実行
 
@@ -67,8 +68,3 @@ select * from Samples.IfindWithSudachi where %ID %FIND search_index(TextDataInde
 ```
 
 
-TBD
-
-コンテナPythonバージョンの関係で現時点では動作していない
-
-### ローカルインストール
