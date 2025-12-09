@@ -19,7 +19,53 @@ SudachiはPythonによる実装も提供されているためIRISでの実装も
 
 ## セットアップ方法
 
-### Dockerによる起動
+### gitクローン
+
+* ```git clone https://github.com/intersystems-jp/iris-ifind-withsudachi.git```
+
+### Docker ビルドプロセス
+
+### ビルド&実行
+* ```docker-compose up -d --build```      
+
+を実行
+
+### ローカルインストール(WindowsやMacOSにインストールしたIRISでセットアップする)
+
+#### Python sudachiパッケージのインストール
+
+--targetは環境により異なる
+
+```
+python3 -m pip install --upgrade　--target c:¥Intersystems¥iris¥mgr¥python sudachipy
+python3 -m pip install --upgrade　--target c:¥Intersystems¥iris¥mgr¥python sudachidict_core
+```
+
+#### Sampleクラスのロード
+
+ターミナルでログイン
+
+```
+>zn "USER"
+>set file = "c:\git\iris-ifind-withsudachi\src\Samples\IfindWithSudachi.cls"
+>Do $system.OBJ.Import(file,"ck")
+```
+
+#### サンプルデータの生成
+
+```
+>zn "USER"
+>do ##class(Samples.IfindWithSudachi).LoadData()
+```
+
+#### クエリーの実行
+
+管理ポータル等で以下のようなSQLを呼び出す。
+
+```
+select * from Samples.IfindWithSudachi where %ID %FIND search_index(TextDataIndex,'{輸出}',2)
+```
+
 
 TBD
 
