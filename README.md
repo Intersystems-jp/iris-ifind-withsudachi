@@ -23,7 +23,7 @@ SudachiはPythonによる実装も提供されているためIRISでの実装も
 
 * ```git clone https://github.com/intersystems-jp/iris-ifind-withsudachi.git```
 
-### Docker ビルドプロセス(TBD 現時点では動作しない python pipバージョンの問題？)
+### Docker ビルドプロセス(TBD 現時点では動作しない rustのコンパイラが必要)
 
 ### ビルド&実行
 
