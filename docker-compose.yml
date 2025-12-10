@@ -1,0 +1,18 @@
+version: '3.7'
+#
+services:
+  iris:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: dwhbench
+    restart: always
+    
+    ports: 
+      - 52773:52773
+
+    volumes:
+      - ./:/irisdev/app    
+
+    environment:
+    - TZ=JST-9

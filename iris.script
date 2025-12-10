@@ -1,0 +1,10 @@
+
+zn "%SYS"
+Do ##class(Security.Users).UnExpireUserPasswords("*")
+Do ##class(Config.NLS.Locales).Install("jpuw")
+
+zn "USER"
+set io = ##class(%SYS.NLS.Device).SetIO("UTF8")
+Do $system.OBJ.LoadDir("/intersystems/iris/samples/","ck",,1)
+Do ##class(Samples.IfindWithSUdachi).PopulateData()
+halt
