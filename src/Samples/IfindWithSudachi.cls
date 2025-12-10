@@ -23,7 +23,7 @@ ClassMethod PopulateData() As %Status
 
 Method %OnBeforeSave(pInsert As %Boolean) As %Status [ Private ]
 {
-	do ..RegisterWords(..TextData)
+  do ..RegisterWords(..TextData)
   quit $$$OK
 }
 
@@ -36,6 +36,7 @@ ClassMethod RegisterWords(textdata As %String) As %Status [ Language = python ]
     try:
 
       tokenizer_obj = dictionary.Dictionary().create()
+      # 分ち書きのモード　A,B,Cがある。　Aが最も細かく分ける
       mode = tokenizer.Tokenizer.SplitMode.A
       
       for m in tokenizer_obj.tokenize(textdata, mode):
