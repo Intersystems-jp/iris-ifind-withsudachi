@@ -1,6 +1,10 @@
 Class Samples.ContainsTermSudachi Extends %Persistent
 {
 
+// 以下のようなクエリーを発行できる
+
+// select * from Samples.ContainsTermSudachi where TextData %Containsterm('輸出')
+
 /// データ
 Property TextData As %Text(COLLATION = "SQLUPPER", LANGUAGECLASS = "Text.JapaneseSudachi", MAXLEN = 1000);
 
