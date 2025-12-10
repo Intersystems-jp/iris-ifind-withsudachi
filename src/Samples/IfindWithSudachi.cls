@@ -1,6 +1,10 @@
 Class Samples.IfindWithSudachi Extends %Persistent
 {
 
+// 以下のようなクエリーを発行できる
+
+// select * from Samples.IfindWithSudachi where %ID %FIND search_index(TextDataIndex,'{輸出}',2)
+
 Property TextData As %Text(COLLATION = "SQLUPPER", LANGUAGECLASS = "%TextJapanese", MAXLEN = 1000);
 
 Index TextDataIndex On (TextData) As %iFind.Index.Basic(INDEXOPTION = 2, LANGUAGE = "ja", LOWER = 1);
