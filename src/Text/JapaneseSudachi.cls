@@ -18,6 +18,7 @@ ClassMethod DivideWords(textdata As %String) As %String [ Language = python ]
     try:
 
       tokenizer_obj = dictionary.Dictionary().create()
+      # 分ち書きのモード　A,B,Cがある。　Aが最も細かく分ける
       mode = tokenizer.Tokenizer.SplitMode.C
 
       returnWords = [m.surface() for m in tokenizer_obj.tokenize(textdata, mode)]
