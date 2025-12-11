@@ -9,8 +9,9 @@ ENV ISC_TEMP_DIR=/intersystems/iris/samples
 
 RUN apt-get update 
 RUN apt-get install -y curl
-CMD curl -y https://sh.rustup.rs -sSf | bash
-ENV PATH="/root/.cargo/bin:$PATH"
+ENV PATH=$PATH:/root/.cargo/bin
+RUN curl https://sh.rustup.rs -sSf > /rust.sh
+RUN sh /rust.sh -y
 RUN python3 -m pip install --target /usr/irissys/mgr/python sudachipy
 RUN python3 -m pip install --target /usr/irissys/mgr/python sudachidict_core
 
