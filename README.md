@@ -2,8 +2,8 @@
 
 ## iFind.Index.Basic
 
-SQL Searchは、元々%iKnowの技術をベースに開発された機能です。
-しかし、%iKnowが非推奨機能となり、SQL Searchの機能の内、%iKnowの機能依存度が少ないiFind.Index.BasicとiFind.Index.Minimumのみがサポートされています。
+SQL Searchは、元々InterSystems NLP(iKnow)の技術をベースに開発された機能です。
+しかし、iKnowが非推奨機能となり、SQL Searchの機能の内、iKnowの機能依存度が少ないiFind.Index.BasicとiFind.Index.Minimumのみがサポートされています。
 
 ### iFind.Index.Basicを利用した全文検索機能の制限
 
@@ -11,7 +11,7 @@ SQL Searchは、元々%iKnowの技術をベースに開発された機能です�
 
 ### 形態素解析ツール（Sudachi）を利用した語幹による検索
 
-日本語に関しては、言語の特性上、%iKnowの機能を完全に排除することは難しく、本来iFind.Index.BasicではサポートされていないEntity Searchが一部サポートされています。
+日本語に関しては、言語の特性上、iKnowの機能を完全に排除することは難しく、本来iFind.Index.BasicではサポートされていないEntity Searchが一部サポートされています。
 
 その機能とSudachiの様な形態素解析ツールを組み合わせることで、形態素単位での検索を実装できます。
 
@@ -23,7 +23,7 @@ SudachiはPythonによる実装も提供されているためIRISでの実装も
 
 * ```git clone https://github.com/intersystems-jp/iris-ifind-withsudachi.git```
 
-### Docker ビルドプロセス(TBD 現時点では動作しない rustのコンパイラが必要)
+### Docker ビルドプロセス
 
 ### ビルド&実行
 
