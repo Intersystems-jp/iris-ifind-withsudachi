@@ -69,7 +69,7 @@ select * from Samples.IfindWithSudachi where %ID %FIND search_index(TextDataInde
 
 ## 参考
 
-### Dockerによる実行
+### Dockerによるコマンド実行
 
 ```
 % docker ps
@@ -85,5 +85,12 @@ Enter <command>, 'q' to quit, '?' for help.
 [SQL]USER>>select * from Samples.IfindWithSudachi where %ID %FIND search_index(TextDataIndex,'{輸出}',2)
 ```
 
-%%% 管理ポータルによる実行
+### 管理ポータルによる実行
 
+[localhost:52773/csp/sys/%25CSP.Portal.Home.zen?IRISUsername=_system&IRISPassword=SYS](http://localhost:52773/csp/sys/%25CSP.Portal.Home.zen?IRISUsername=_system&IRISPassword=SYS)
+
+システム>システムエクスポーラ>SQL
+
+ネームスペースが%SYSではなくUSERとなっているか確認、なっていなければ、USER変更
+
+SQL実行タブを選んで、Sql文を入力して実行ボタンを押す
