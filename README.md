@@ -67,4 +67,23 @@ python3 -m pip install --upgrade　--target c:¥Intersystems¥iris¥mgr¥python 
 select * from Samples.IfindWithSudachi where %ID %FIND search_index(TextDataIndex,'{輸出}',2)
 ```
 
+## 参考
+
+### Dockerによる実行
+
+```
+% docker ps
+% docker exec -ti ifind /bin/sh
+% iris session iris
+
+>:sql
+SQL Command Line Shell
+----------------------------------------------------
+
+The command prefix is currently set to: <<nothing>>.
+Enter <command>, 'q' to quit, '?' for help.
+[SQL]USER>>select * from Samples.IfindWithSudachi where %ID %FIND search_index(TextDataIndex,'{輸出}',2)
+```
+
+%%% 管理ポータルによる実行
 
