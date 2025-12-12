@@ -1,4 +1,4 @@
-# 形態素解析ツール　sudachipyを利用したSQl Searchの実装サンプル
+# 形態素解析ツール　sudachipyを利用したSQL Searchの実装サンプル
 
 ## iFind.Index.Basic
 
