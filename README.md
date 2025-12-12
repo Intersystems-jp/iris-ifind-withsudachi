@@ -3,6 +3,7 @@
 ## iFind.Index.Basic
 
 SQL Searchは、元々InterSystems NLP(iKnow)の技術をベースに開発された機能です。
+
 しかし、iKnowが非推奨機能となり、SQL Searchの機能の内、iKnowの機能依存度が少ないiFind.Index.BasicとiFind.Index.Minimumのみがサポートされています。
 
 ### iFind.Index.Basicを利用した全文検索機能の制限
