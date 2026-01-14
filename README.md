@@ -57,7 +57,7 @@ python3 -m pip install --upgrade　--target c:¥Intersystems¥iris¥mgr¥python 
 
 ```
 >zn "USER"
->do ##class(Samples.IfindWithSudachi).LoadData()
+>do ##class(Samples.IfindWithSudachi).PopulateData()
 ```
 
 #### クエリーの実行
