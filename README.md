@@ -65,7 +65,8 @@ python3 -m pip install --upgrade　--target c:¥Intersystems¥iris¥mgr¥python 
 管理ポータル等で以下のようなSQLを呼び出す。
 
 ```
-select * from Samples.IfindWithSudachi where %ID %FIND search_index(TextDataIndex,'{輸出}',2)
+select * from Samples.IfindWithSudachi where %ID %FIND search_index(TextDataIndex,'{ベンチ}',2)
+select * from Samples.IfindWithSudachi where %ID %FIND search_index(TextDataIndex,'{ベンチマークテスト}',2)
 ```
 
 ## 参考
