@@ -95,3 +95,7 @@ Enter <command>, 'q' to quit, '?' for help.
 ネームスペースが%SYSではなくUSERとなっているか確認、なっていなければ、USER変更
 
 SQL実行タブを選んで、Sql文を入力して実行ボタンを押す
+
+### RUSTのインストール
+
+MacOSでは必要ありませんが、Docker環境では、sudachipyのインストールの前にRUSTのインストールが必要です。
