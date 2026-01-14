@@ -91,7 +91,7 @@ Enter <command>, 'q' to quit, '?' for help.
 
 [localhost:52773/csp/sys/%25CSP.Portal.Home.zen?IRISUsername=_system&IRISPassword=SYS](http://localhost:52773/csp/sys/%25CSP.Portal.Home.zen?IRISUsername=_system&IRISPassword=SYS)
 
-システム>システムエクスポーラ>SQL
+システム>システムエクスプローラ>SQL
 
 ネームスペースが%SYSではなくUSERとなっているか確認、なっていなければ、USER変更
 
@@ -99,4 +99,4 @@ SQL実行タブを選んで、Sql文を入力して実行ボタンを押す
 
 ### RUSTのインストール
 
-MacOSでは必要ありませんが、Docker環境では、sudachipyのインストールの前にRUSTのインストールが必要です。
+MacOSでは必要ありませんが、Linux環境では、sudachipyのインストールの前にRUSTのインストールが必要かも知れません。
