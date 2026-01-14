@@ -84,7 +84,7 @@ SQL Command Line Shell
 
 The command prefix is currently set to: <<nothing>>.
 Enter <command>, 'q' to quit, '?' for help.
-[SQL]USER>>select * from Samples.IfindWithSudachi where %ID %FIND search_index(TextDataIndex,'{輸出}',2)
+[SQL]USER>>select * from Samples.IfindWithSudachi where %ID %FIND search_index(TextDataIndex,'{ベンチ}',2)
 ```
 
 ### 管理ポータルによる実行
